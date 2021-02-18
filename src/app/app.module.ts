@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 /* Services */
 import { RoleProvider } from './services/role/role.provider';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { SamplesPageComponent } from './pages/samples-page/samples-page.component';
 
 /* Pages */
 
@@ -26,6 +27,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
   declarations: [
     AppComponent,
     HomePageComponent,
+    SamplesPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@ export class AppComponent {
       {
         title: 'Sample',
         icon: 'flag-outline',
-        link: '/sample'
+        link: '/samples'
       },
       {
         title: 'Laboratory',
