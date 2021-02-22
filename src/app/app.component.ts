@@ -23,57 +23,52 @@ export class AppComponent {
         link: '/samples'
       },
       {
-        title: 'Laboratory',
-        icon: 'list-outline',
-        link: '/laboratory'
-      },
-      {
-        title: 'Batch notification',
+        title: 'zgłoszenie próby',
         icon: 'list-outline',
         link: '/batch_notification'
       },
       {
-        title: 'Batch collection',
+        title: 'pobór próby',
         icon: 'list-outline',
         link: '/batch_collection'
       },
       {
-        title: 'Batch adoption',
+        title: 'przyjęcie próby',
         icon: 'list-outline',
         link: '/batch_adoption'
       },
       {
-        title: 'assigning research',
+        title: 'przydzielanie badań',
         icon: 'list-outline',
         link: '/assigning_research'
       },
       {
-        title: 'enter results',
+        title: 'wpisywanie wyników',
         icon: 'list-outline',
         link: '/enter_results'
       },
       {
-        title: 'result out of specification ',
+        title: 'wynik poza specyfikacją',
         icon: 'list-outline',
         link: '/out_of_specification'
       },
       {
-        title: 'checking results',
+        title: 'sprawdzanie wyniku',
         icon: 'list-outline',
         link: '/checking_results'
       },
       {
-        title: 'certificate approval',
+        title: 'zatwierdzanie certyfikatu',
         icon: 'list-outline',
         link: '/certificate_approval'
       },
       {
-        title: 'certificate print',
+        title: 'wydruk certyfikatu',
         icon: 'list-outline',
         link: '/certificate_print'
       },
       {
-        title: 'reports',
+        title: 'raporty',
         icon: 'list-outline',
         link: '/reports'
       }
