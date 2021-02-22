@@ -16,8 +16,18 @@ import { AppRoutingModule } from './app-routing.module';
 
 /* Services */
 import { RoleProvider } from './services/role/role.provider';
-import { HomePageComponent } from './pages/home-page/home-page.component';
+import { HomePageComponent } from './pages/home-page-page/home-page.component';
 import { SamplesPageComponent } from './pages/samples-page/samples-page.component';
+import { BatchNotificationComponent } from './pages/batch-notification-page/batch-notification.component';
+import { BatchCollectionComponent } from './pages/batch-collection-page/batch-collection.component';
+import { BatchAdoptionComponent } from './pages/batch-adoption-page/batch-adoption.component';
+import { AssigningResearchComponent } from './pages/assigning-research-page/assigning-research.component';
+import { EnterResultsComponent } from './pages/enter-results-page/enter-results.component';
+import { OutOfSpecificationComponent } from './pages/out-of-specification-page/out-of-specification.component';
+import { CheckingResultsComponent } from './pages/checking-results-page/checking-results.component';
+import { CertificateApprovalComponent } from './pages/certificate-approval-page/certificate-approval.component';
+import { CertificatePrintComponent } from './pages/certificate-print-page/certificate-print.component';
+import { ReportsComponent } from './pages/reports-page/reports.component';
 
 /* Pages */
 
@@ -28,6 +38,16 @@ import { SamplesPageComponent } from './pages/samples-page/samples-page.componen
     AppComponent,
     HomePageComponent,
     SamplesPageComponent,
+    BatchNotificationComponent,
+    BatchCollectionComponent,
+    BatchAdoptionComponent,
+    AssigningResearchComponent,
+    EnterResultsComponent,
+    OutOfSpecificationComponent,
+    CheckingResultsComponent,
+    CertificateApprovalComponent,
+    CertificatePrintComponent,
+    ReportsComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,9 +65,9 @@ import { SamplesPageComponent } from './pages/samples-page/samples-page.componen
       strategies: [
         NbPasswordAuthStrategy.setup({
           name: 'email',
-          token:{
+          token: {
             key: 'token',
-            class:NbAuthJWTToken
+            class: NbAuthJWTToken
           },
           baseEndpoint: 'http://localhost:8080',
           login: {
@@ -69,13 +89,13 @@ import { SamplesPageComponent } from './pages/samples-page/samples-page.componen
         }),
       ],
       forms: {
-        login:{
+        login: {
           showMessages: {
             success: true,
           }
         }
       },
-    }), 
+    }),
     NbSecurityModule.forRoot({
       accessControl: {
         user: {
