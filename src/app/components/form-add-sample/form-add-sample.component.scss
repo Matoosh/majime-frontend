@@ -1,0 +1,15 @@
+.full-name-inputs,
+.validation-checkboxes {
+  display: flex;
+  margin: 0 -0.5rem;
+  
+  > * {
+    margin: 0 0.5rem;
+  }
+}
+  
+.buttonsFun{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
