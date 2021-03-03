@@ -1,8 +1,11 @@
 <nb-card status="success">
     <nb-card-body>
-        <p>Samples page</p>
-        <p>Próbka 1</p>
-        <p>Próbka 2</p>
-        <input nbInput>
+        <ng2-smart-table 
+            [settings]="settings" 
+            [source]="source" 
+            (create)="onCreate()" 
+            (delete)="onDelete($event)" 
+            >
+        </ng2-smart-table>
     </nb-card-body>
 </nb-card>

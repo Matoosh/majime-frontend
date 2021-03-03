@@ -16,6 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 /* Services */
 import { RoleProvider } from './services/role/role.provider';
+
+/* Pages */
 import { HomePageComponent } from './pages/home-page-page/home-page.component';
 import { SamplesPageComponent } from './pages/samples-page/samples-page.component';
 import { BatchNotificationComponent } from './pages/batch-notification-page/batch-notification.component';
@@ -29,9 +31,8 @@ import { CertificateApprovalComponent } from './pages/certificate-approval-page/
 import { CertificatePrintComponent } from './pages/certificate-print-page/certificate-print.component';
 import { ReportsComponent } from './pages/reports-page/reports.component';
 
-/* Pages */
-
 /* Components */
+import { FormAddSampleComponent } from './components/form-add-sample/form-add-sample.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ReportsComponent } from './pages/reports-page/reports.component';
     CertificateApprovalComponent,
     CertificatePrintComponent,
     ReportsComponent,
+    FormAddSampleComponent,
   ],
   imports: [
     BrowserModule,

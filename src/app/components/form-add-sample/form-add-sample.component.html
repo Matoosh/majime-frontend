@@ -1,0 +1,59 @@
+<form [formGroup]="sampleForm" (ngSubmit)="onSubmit()">
+    <!-- <div class="form-group row">
+      <label for="inputName" class="label">Name & Surname</label>
+      <div class="full-name-inputs">
+        <input type="text" nbInput id="inputName" fullWidth placeholder="Name" formControlName="name">
+        <input type="text" nbInput id="inputSurname" fullWidth placeholder="Surname" formControlName="surname">
+      </div>
+    </div> -->
+    <div class="form-group row">
+      <label for="sampleNo" class="label">Sample number</label>
+      <div>
+        <input type="text" nbInput fullWidth id="sampleNo" placeholder="Sample number" formControlName="sampleNo">
+      </div>
+      <label for="quantity" class="label">Quantity</label>
+      <div>
+        <input type="number" nbInput fullWidth id="quantity" placeholder="Quantity" formControlName="quantity">
+      </div>
+      <!-- 
+      <label for="price" class="label">Price</label>
+      <div>
+        <input type="number" nbInput fullWidth id="price" placeholder="Price" formControlName="price">
+      </div>
+      <label for="birthdate" class="label">Birthdate</label>
+      <div>
+        <input id="birthdate" nbInput fullWidth [nbDatepicker]="datepicker" placeholder="Birthdate" formControlName="birthdate">
+        <nb-datepicker #datepicker></nb-datepicker>
+      </div>
+      <div>
+        <label class="col-sm-3 label">Gender</label>
+        <div>
+          <nb-radio-group [(value)]="option" formControlName="gender">
+            <nb-radio
+              *ngFor="let option of options"
+              [value]="option.value">
+              {{ option.label }}
+            </nb-radio>
+          </nb-radio-group>
+        </div>
+      </div>
+      <div>
+        <label for="nationality" class="label">Nationality</label>
+        <div>
+          <input type="text" nbInput fullWidth id="nationality" placeholder="Nationality" formControlName="nationality">
+        </div>
+      </div>
+      <div>
+        <label for="desc" class="label">Description</label>
+        <div>
+          <textarea rows="5" nbInput fullWidth id="desc" shape="round" placeholder="Description" formControlName="desc"></textarea>
+        </div>
+      </div> -->
+    </div>
+    <div class="form-group row">
+      <div class="offset-sm-3 buttonsFun">
+        <button type="submit" [disabled]="!sampleForm.valid" nbButton status="primary">Add Sample</button>
+        <button nbButton status="primary" (click)="close()">Cancel</button>
+      </div>
+    </div>
+  </form>
